@@ -69,3 +69,32 @@ describe ("feed", () => {
         expect(pet.hunger).toEqual(0);
     });
 });
+
+describe ("checkUp", () => {
+    it ("returns message if fitness is 3 or less", () => {
+        const pet = new Pet("Jimmy");
+        pet.fitness = 3;
+        pet.checkUp();
+        expect(pet.checkUp()).toEqual("I need a walk");
+    });
+    it ("returns message if hunger is 5 or more", () => {
+        const pet = new Pet;
+        pet.hunger = 5;
+        pet.checkUp();
+        expect(pet.checkUp()).toEqual("I am hungry");
+    });
+    it ("returns message if both of the above are true", () => {
+        const pet = new Pet;
+        pet.fitness = 3;
+        pet.hunger=5;
+        pet.checkUp();
+        expect(pet.checkUp()).toEqual("I am hungry AND I need a walk");
+    });
+    it ("returns message if neither of the first two are true", () => {
+        const pet = new Pet;
+        pet.fitness = 6;
+        pet.hunger = 2;
+        pet.checkUp();
+        expect(pet.checkUp()).toEqual("I feel great!");
+    });
+});
