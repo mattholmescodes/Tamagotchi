@@ -11,11 +11,17 @@ function Pet (name) {
     this.walk = function() {
         if (this.fitness > 6) {
             this.fitness = 10;
-        }
-        else {
+        } else {
             this.fitness +=4;
         };
     };
+    this.feed = function() {
+        if (this.hunger < 3) {
+            this.hunger = 0;
+        } else {
+            this.hunger -=3;
+        }
+    }
 };
 
 module.exports = Pet;
