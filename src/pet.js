@@ -33,6 +33,17 @@ function Pet (name) {
             return ("I feel great!");
         };
     };
+    this.isAlive = function() {
+        if (this.fitness <= 0) {
+            return false;
+        } else if (this.hunger >= 10) {
+            return false;
+        } else if (this.age >= 30) {
+            return false;
+        } else {
+            return true;
+        };
+    };
 };
 
 
