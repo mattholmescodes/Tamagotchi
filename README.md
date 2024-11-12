@@ -24,4 +24,4 @@ This project uses jest as it's test dependency.
 
 
 
-## (@Matt Holmes)[https://github.com/mattholmescodes]
+## [Matt Holmes](https://github.com/mattholmescodes)
