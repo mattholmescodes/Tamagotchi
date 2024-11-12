@@ -39,3 +39,18 @@ describe ("growUp", () => {
         expect(pet.fitness).toEqual(7);
     });
 });
+
+describe ("walk", () => {
+    it ("Increases fitness by 4", () => {
+        const pet = new Pet("Jimmy");
+        pet.fitness = 5;
+        pet.walk();
+        expect(pet.fitness).toEqual(9);
+    });
+    it ("increases fitness up to max value of 10", () => {
+        const pet = new Pet("Jimmy");
+        pet.fitness = 7;
+        pet.walk();
+        expect(pet.fitness).toEqual(10);
+    });
+});
