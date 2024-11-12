@@ -1,4 +1,4 @@
-### Tamagotchi App!
+# Tamagotchi App!
 
 In this app you will be tested in keeping your pet alive.. however there is a catch.
 
@@ -24,4 +24,4 @@ This project uses jest as it's test dependency.
 
 
 
-## (Matt Holmes)[https://github.com/mattholmescodes]
+## (@Matt Holmes)[https://github.com/mattholmescodes]
